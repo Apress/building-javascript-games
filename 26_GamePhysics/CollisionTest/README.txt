@@ -1,0 +1,1 @@
+Note that if you run the CollisionTest example from a local file, it only works in browsers that allow reading canvas pixel data we a web application is run locally. Chrome doesn't allow this for example, but Firefox and Internet Explorer do.

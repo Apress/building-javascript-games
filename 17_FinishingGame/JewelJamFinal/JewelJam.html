@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="game-layout.css"/>
+        <title>Jewel Jam</title>
+        <script src="../LAB.min.js"></script>
+        <script>
+
+            $LAB
+                    .script('Math.js').wait()
+                    .script('geom/Vector2.js').wait()
+                    .script('geom/Rectangle.js').wait()
+                    .script('Canvas2D.js').wait()
+                    .script('system/Color.js').wait()
+                    .script('system/Keys.js').wait()
+                    .script('input/ButtonState.js').wait()
+                    .script('input/Keyboard.js').wait()
+                    .script('input/Mouse.js').wait()
+                    .script('input/Touch.js').wait()
+                    .script('Sound.js').wait()
+                    .script('gameobjects/GameObject.js').wait()
+                    .script('gameobjects/GameObjectList.js').wait()
+                    .script('gameobjects/GameObjectGrid.js').wait()
+                    .script('gameobjects/SpriteGameObject.js').wait()
+                    .script('gameobjects/VisibilityTimer.js').wait()
+                    .script('gui/Button.js').wait()
+                    .script('gui/Label.js').wait()
+                    .script('Game.js').wait()
+
+                    .script('gameobjects/JewelJamGameWorld.js').wait()
+                    .script('gameobjects/JewelCart.js').wait()
+                    .script('gameobjects/JewelGrid.js').wait()
+                    .script('gameobjects/Jewel.js').wait()
+                    .script('gameobjects/ScoreGameObject.js').wait()
+                    .script('gameobjects/GlitterField.js').wait()
+                    .script('JewelJam.js').wait(function() {
+                        Game.start('gameArea', 'mycanvas', 1440, 1080);
+                    });
+
+        </script>
+                     
+        <title>Jewel Jam</title>
+    </head>
+
+    <body>
+        <div id="gameArea">
+            <canvas id="mycanvas">Your browser doesn't support canvas tag</canvas>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Painter</title>
+    <link rel="stylesheet" type="text/css" href="game-layout.css"/>
+    <script src="../LAB.min.js"></script>
+    <script>
+
+        $LAB
+                .script('input/Keyboard.js').wait()
+                .script('input/Mouse.js').wait()
+                .script('Canvas2D.js').wait()
+                .script('system/Keys.js').wait()
+
+                .script('Painter.js').wait()
+                .script('Cannon.js').wait(function () {
+                    Game.start('mycanvas');
+                });
+
+    </script>
+</head>
+
+<body>
+<div id="gameArea">
+    <canvas id="mycanvas" width="800" height="480"></canvas>
+</div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BasicExample</title>
+<script>
+    function changeCanvasColor () {
+        var canvas = document.getElementById("mycanvas");
+        var context = canvas.getContext("2d");
+        context.fillStyle = "blue";
+        context.fillRect(0, 0, canvas.width, canvas.height);
+    }
+
+    document.addEventListener('DOMContentLoaded', changeCanvasColor);
+</script>
+</head>
+<body>
+<div id="gameArea">
+    <canvas id="mycanvas" width="800" height="480"></canvas>
+</div>
+</body>
+</html>
